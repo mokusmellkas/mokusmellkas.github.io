@@ -1,264 +1,106 @@
-.header {
-  overflow: hidden;
-  background-image:url("falab.jpg");
-  background-position: left;
-  background-repeat: no-repeat;
-  background-color: #ffffffcb;
-  height: 350px;
-  padding: 10px ;
-  width: auto;
-  font-size: 25px;
-  font-family: cursive;
-  height: 300px;
-}
-
-.header a {
+/*Fejlec*/
+#nav {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  position: fixed;
+  text-align:center;
+  background-color: rgba(58, 58, 58, 0.788);
+  }
+  #nav ul {
+  display:inline-block;
+  list-style:none; 
+  margin-bottom: 2%;
+  }
+  #nav li {
+    color: #93c6d6;
+  display:inline;
+  }
+  #nav img {
+    margin: 0.4%;
+    margin-left: 3%;
   float: left;
-  color: rgb(26, 24, 24);
-  text-align: center;
-  padding: 32px;
-  margin-right: 10%;
-  text-decoration: none;
-  font-size: 25px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-/* Change the background color on mouse-over */
-.header a:hover {
-  background-color: rgba(231, 148, 148, 0.24);
-  color: black;
-}
-.header img {
-  float: left;
-}
-
-/* Style the active/current link*/
-.header a.active {
-  background-color: rgb(231, 148, 148);
-  color: white;
-}
-
-/* Float the link section to the right */
-.header-right {
-  float: right;
- width: 640px;
-  background-color: #ffffffcb;
-}
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
+  }
+  #nav a {
+    margin-top: 3%;
     display: block;
-    text-align: left;
+    color: white;
+    font-size: 30px;
+  float:left;
+  text-decoration:none; 
+  padding:0 50px;
   }
-  .header-right {
-    float: none;
-  }
-}
+  
+  /*Fixáló*/
+  html, body {margin: 0; height: 100%; overflow: hidden}
+body{
+  min-width: 1075px; 
 
-* {
-  box-sizing: border-box;
 }
-.h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  text-align: left;
-}
+/* Kék 12527E, Májva E7CFCD, Barna 8c6057, Világoskék 93c6d6, zöldes dbf4a7*/
+/*box-shadow: -10px -10px 5px #1c87c9, -20px -20px 5px #ccc, -30px -30px 5px #8ebf42, -40px -40px 5px #c21c1c;*/
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.szin1 {
+  background-color: #E7CFCD;
+  box-shadow: -10px -10px 5px #8c6057, -20px -20px 5px #93c6d6, -30px -30px 5px #dbf4a7;
 }
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
+.szin2 {
+  background-color: #dbf4a7;
+  box-shadow: -10px -10px 5px #E7CFCD, -20px -20px 5px #8c6057, -30px -30px 5px #93c6d6;
 }
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-  background-color: rgb(18, 82, 126);
+.szin3 {
+  background-color: #93c6d6;
+  box-shadow: -10px -10px 5px #dbf4a7, -20px -20px 5px#E7CFCD, -30px -30px 5px  #8c6057;
 }
-.kep {
-  width: auto;
-  border: solid;
-  border-radius: 5mm;
-  border-color: rgb(231, 231, 231) rgba(184, 182, 182, 0.767) ; 
+.szin4 {
+  background-color: #8c6057;
+  box-shadow: -10px -10px 5px #93c6d6, -20px -20px 5px#dbf4a7, -30px -30px 5px  #E7CFCD;
 }
-.box {
-  float: left;
-  width: 200px;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover {
-  background-color: #0099cc;
-}
-
-.aside {
-  background-color: rgba(8, 168, 56, 0.404);
-  padding: 15px;
-  color: #ffffff;
+.forma {
+display: block;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 4.5%;
+  padding: 1%;
   text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  margin-right: 1%;
-  max-width: 100%;
-  border: solid;
-  border-radius: 5mm;
-  border-color: rgb(231, 231, 231) rgba(184, 182, 182, 0.767) ; 
 }
-.label {
-  font-size: 20px;
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  text-align: center;
+}
+
+.flex-item-left {
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
 }
 input {
-  border-style: solid;
-  border-radius: 10px;
-  padding: 5px; 
-  max-width: 100%;
-}
-select {
-  border-style: solid;
-  padding: 5px; 
-  max-width: 100%;
-}
-page {
-  background:#ffffffcb;
-  ;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 0.5cm;
-  box-shadow: 0 0 20px #64646480;
-  border: solid;
-  border-color:rgba(184, 182, 182, 0.767) rgb(253, 192, 192);
-}
-page[size="A4"] {  
-  width: auto;
-  margin-left: 5%;
-  height: 29.7cm; 
-}
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
+  width: 35%;
+  margin: 10px;
+  height: 25px;
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 10%;}
-  .col-15 {width: 15%;}
-  .col-s-2 {width: 20%;}
-  .col-s-3 {width: 30%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 60%;}
-  .col-s-7 {width: 70%;}
-  .col-s-75 {width: 75%;}
-  .col-s-8 {width: 80%;}
-  .col-s-9 {width: 90%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 10%;}
-  .col-15 {width: 15%;}
-  .col-2 {width: 20%;}
-  .col-3 {width: 30%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 60%;}
-  .col-7 {width: 70%;}
-  .col-75 {width: 75%;}
-  .col-8 {width: 80%;}
-  .col-9 {width: 90%;}
-}
 
-/*Második Fejléc*/
 
-.kozep {
-  margin-left: 25%;
-}
-.content {
-  margin-left: 1%;
-}
+  /*Lablec*/
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(58, 58, 58, 0.788);
+    color: white;
+    text-align: center;
+  }
 
-.dd {
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  background-color: #ec7171b2; /* Green background */
-  border: 1px solid rgb(109, 211, 230); /* Green border */
-  color: white; /* White text */
-  padding: 20px 20px; /* Some padding */
-}
-
-.dd-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dd:hover .dd-content {
-  display: block;
-}
-.btn-group button {
-  background-color: #c9c9c9; /* Green background */
-  border: 1px solid rgb(109, 211, 230); /* Green border */
-  color: white; /* White text */
-  padding: 10px 0px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  width: 160px; /* Set a width if needed */
-  display: block; /* Make the buttons appear below each other */
-}
-
-.btn-group button:not(:last-child) {
-  border-bottom: none; /* Prevent double borders */
-}
-
-/* Add a background color on hover */
-.btn-group button:hover {
-  background-color: #3e8e41;
-}
-ul {
-  width: 171px;
-}
-.content img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-.tartalom {
-  background: rgba(0, 0, 0, 0.055);
-  color: rgba(52, 54, 51, 0.747);
-  text-align: center;
-}
-.tartalom img {
-max-width: 70%;
-}
-.tartalom a {
-font-size: 30px;
-color: rgba(12, 131, 32, 0.658);
-}
-.tartalom p {
-font-size: 30px;
-}
-.tartalom h1 {
-font-size: 40px;
-}
+  /*Elvalaszto*/
+  .elvalaszt {
+    margin-bottom: 220px;
+  }
