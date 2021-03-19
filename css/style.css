@@ -1,0 +1,39 @@
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("https://www.clipartmax.com/png/full/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    background-color: black;
+    border-radius: 50%;
+    height: 50px;
+  } 
+.centerside {
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+h1 {
+    margin-top: -50px;
+    font-size: 70px;
+    width: 400px;
+}
+p {
+    font-size: 10px;
+    width: 400px;
+}
+.btn {
+    font-weight: 200;
+    display: block;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+      background-color: rgb(77, 3, 80);
+      color: rgb(255, 255, 255);
+      line-height: 30px;
+    }
+  }
+
+  
