@@ -4,47 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="scss/style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav class="navbar navbar-1">
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css"> 
+  </head>
+            <div class="dropdown-toggle"  data-toggle="dropdown">
+              <svg height="100%" width="100%" viewBox="10 10 100">
+                <circle cx="50" cy="50" r="50" fill="rgb(57, 182, 159)" />
+                  <rect x="25" y="30"  width="50" fill="white" height="8"></rect>
+                  <rect x="25" y="46"  width="50" fill="white" height="8"></rect>
+                  <rect x="25" y="62"  width="50" fill="white" height="8"></rect>
+                </svg> 
+              </div>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
 
-        <!-- Navbar brand -->
-        <div class="title">MEDIA APPEREANCES</h1>
-      
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
-          aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent15">
-           <div>Random dolog</div> 
-        </nav>
+<div class="grid">
+  <div class="element">
+    <h1>Jelentkezés</h1>
+  </div>
+  <div class="element"><input type="text" id="name" name="name" value="Név"></div>
+  <div class="element"><input type="email" id="email" name="email" value="Email cím"></div>
+  <div class="element"><input type="phone" id="phone" phone="name" value="Telefonszám"></div>
+  <div class="element">
+    <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" value="Bike"><label for="checkbox"> Elolvastam és elfogadom az <span>Adatkezelési Tájékoztatót</span> </label><br>
+  </div>
+  <div class="element">
+    <button class="but">Elküld</button>
+  </div>
 
-
-    <div class="grid-container">
-        <div class="grid-item one">
-            <h2>Science <br> Magazine <br> 11. 12. 2018</h2>
-            <p>Want to master your professional and social networks to maximize recognition? Want to learn how to build productive teams that create lasting impact? In his new book, The Formula: The Universal Laws of Success, Albert-László Barabási translates almost a decade of scholarly research on the science of success into a lively...</p>
-        </div>
-        <div class="grid-item two">
-            <h2>Nature <br> 27. 11. 2018</h2>
-            <p>Originally printed by the National Academies of Sciences as a poster to accompany the publication of a research paper on how diseases connect, it was subsequently reproduced by the New York Times and included in the Mapping It Out: Atlas of Contemporary Cartographies exhibition at the Serpentine Gallery in London...</p>
-        </div>
-        <div class="grid-item three">
-            <img src="https://floormarx.com/wp-content/uploads/2017/08/PlaybuttoN_96d128b7-2742-4762-b194-0f512a233ee5_600x.png" width="400px" alt="">
-            <h2>Lecture at NYU</h2>
-        </div>
-        <div class="grid-item labelone">
-            <h2>READ MORE</h2> </div>
-        <div class="grid-item labeltwo">
-             <h2>READ MORE</h2> </div>
-        <div class="grid-item labelthree">
-             <h2>WATCH</h2> </div>
+</div>
+  </header>
 </body>
 </html>

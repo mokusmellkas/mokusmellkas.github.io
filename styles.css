@@ -1,0 +1,79 @@
+body {
+  background-color: #fbb03b;
+}
+
+.dropdown-toggle {
+  position: relative;
+  margin-left: 90%;
+  margin-top: 2%;
+  width: 100%;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+svg {
+  width: 100%;
+}
+
+.element {
+  border-radius: 1px;
+  margin-top: 30px;
+  text-align: center;
+  border-color: #39b69f;
+}
+
+.element input {
+  height: 80px;
+  width: 600px;
+  padding-left: 30px;
+  font-size: 26px;
+  color: #39b69f;
+}
+
+.but {
+  background-color: #39b69f;
+  height: 80px;
+  width: 300px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+span {
+  text-decoration: underline;
+}
+
+.element input.checkbox {
+  height: 20px;
+  width: 20px;
+  padding-right: 20px;
+}
+
+.element label {
+  font-size: 20px;
+  padding-left: 20px;
+  color: #39b69f;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 10%;
+  }
+  .element input {
+    height: 80px;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 26px;
+    color: #39b69f;
+  }
+  .dropdown-toggle {
+    position: relative;
+    margin-left: 20%;
+    padding-right: 10%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
